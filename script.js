@@ -20,3 +20,5 @@ const bikes = [
         weight: 13.4
     }
 ]
+
+console.log(bikes);
