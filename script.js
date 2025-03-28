@@ -22,3 +22,7 @@ const bikes = [
 ]
 
 console.log(bikes);
+
+let lightBike = bikes[0].weight;
+let lighter;
+
