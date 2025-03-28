@@ -46,11 +46,16 @@ for (let i=0; i<teams.length; i++){
 
 console.log(teams);
 
-
-let detailTeams = [];
+const detailsTeams = [];
 
 for (let i=0; i<teams.length; i++){
     
+    let nameAndFoul = {
+        name: teams[i].name,
+        foul: teams[i].foul,
+    };
+    
+    detailsTeams.push(nameAndFoul);
 }
 
-console.log(detailTeams);
+console.log(detailsTeams);
