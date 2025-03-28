@@ -31,13 +31,17 @@ const teams = [
     }
 ]
 
-console.log(teams);
-
 const generateRandomPoints = () => {
-    return Math.floor(Math.random() * 30) + 1;
+    return Math.floor(Math.random() * 10) + 1;
 }
 
 const generateRandomFoul = () => {
-    return Math.floor(Math.random() * 50) + 1;
+    return Math.floor(Math.random() * 30) + 1;
 }
 
+for (let i=0; i<teams.length; i++){
+    teams[i].points = generateRandomPoints();
+    teams[i].foul = generateRandomFoul();
+}
+
+console.log(teams);
